@@ -47,6 +47,18 @@ public class Ejercicio12Segundo {
             }
             sumaColumnas[i] = sumaColumna;
         }
+
+        if (dimension1 == dimension2) {
+            int sumaDiagonal = 0;
+            for (int i = 0; i < matriz.length; i++) {
+                for (int j = 0; j < matriz[i].length; j++) {
+                    if(i==j){
+                        sumaDiagonal += matriz[i][j];
+                    }
+                }
+            }
+            System.out.println("\nSuma diagonal: " + sumaDiagonal);
+        }
         System.out.println("\nSuma de filas:");
         for (int j = 0; j < sumaFilas.length; j++) {
             System.out.print(sumaFilas[j] + " ");
