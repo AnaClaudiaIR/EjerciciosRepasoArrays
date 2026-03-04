@@ -42,9 +42,15 @@ public class EjercicioExtra {
         for (k = 0; k < numeros.length; k++) {
             if (frecuencias[k] > max) {
                 max = frecuencias[k];
-                posicion = k;
             }
         }
-        System.out.println("Maximo: " + max + " - Posición: " + posicion);
+        System.out.println("Maximo: " + max);
+
+        System.out.println();
+        for (int j = 0; j < frecuencias.length; j++) {
+            if (frecuencias[j] == max) {
+                System.out.println("Número que más sale: " + j);
+            }
+        }
     }
 }
