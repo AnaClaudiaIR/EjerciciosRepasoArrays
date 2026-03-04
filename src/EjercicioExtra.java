@@ -35,5 +35,16 @@ public class EjercicioExtra {
         for (i = 0; i < frecuencias.length; i++) {
             System.out.print(frecuencias[i] + " ");
         }
+        System.out.println();
+        int max = 0;
+        int k;
+        int posicion = 0;
+        for (k = 0; k < numeros.length; k++) {
+            if (frecuencias[k] > max) {
+                max = frecuencias[k];
+                posicion = k;
+            }
+        }
+        System.out.println("Maximo: " + max + " - Posición: " + posicion);
     }
 }
